@@ -6,9 +6,46 @@ THINGS THAT COULD BE USEFUL THROUGHOUT
 ----------------------------------
 
 **Setting up VSCode and SSH to Ceph** 
+
 all of the files are stored on Ceph, within the folder `/ceph/behrens/<yourname>`, with a more detailed folder structure below (you'll see it if you scroll to folder structure). 
 
 
+**setting up a conda environment on ceph** 
+
+For the preprocessing of different data, you might need different packages, it'd be nice to have different conda environments, the repo for different preprocessing pipelines would guide you through this, but generally they follow: 
+```
+conda create --name <env_name> python==3.12.7
+conda activate <env_name>
+```
+
+and then direct to your `/ceph/behrens/<yourname>/project/code` folder in terminal and run the following line to set up the environment. 
+
+```
+pip install -r <your_subfolder>/requirements.txt
+```
+
+**requesting a gpu/cpu node** 
+
+```bash
+    srun --nodes=1 --ntasks-per-node=1 --cpus-per-task=8 -p gpu --gres=gpu:1 --time=12:00:00 --mem=64G --pty bash -i
+    # wait for resource to be allocated -- can take a while 
+```
+
+kernel for jupyter notebook 
+
+after you've got a node, direct to your `/ceph/behrens/<yourname>/project/code` folder 
+run: 
+
+```bash
+    source /etc/profile.d/modules.sh
+    ## if using gpu:
+    # module load cuda
+    module load miniconda
+    conda activate <conda_env_of_choice>     #sometimes requires  'source activate <conda_env_of_choice>'
+    jupyter-notebook --no-browser --ip=0.0.0.0 --port 8888
+```
+
+then 
 
 
 
