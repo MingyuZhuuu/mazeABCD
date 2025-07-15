@@ -146,27 +146,27 @@ AFTER EXPERIMENT
 
 
 
-## STEP3: running sleap**  
-    - please see the repo by Peter for a detailed instruction of SLEAP
+## STEP3: running sleap
+- please see the repo by Peter for a detailed instruction of SLEAP
 
 
 
 
-## STEP4: maze registration and transition rate analysis**
-    - please see the repo mazeABCD_registration 
+## STEP4: maze registration and transition rate analysis
+- please see the repo mazeABCD_registration 
 
 
 
 
-## STEP5: run the behavioural preprocessing pipeline** 
-    - please see the mazeABCD_preprocessing repo
+## STEP5: run the behavioural preprocessing pipeline
+- please see the mazeABCD_preprocessing repo
 
 
 
 
 **(OPTIONAL, only if doing ephys recording)**
-## STEP6: run the ephys preprocessing pipeline** 
-    - please see the mazeABCD_spikesorting repo 
+## STEP6: run the ephys preprocessing pipeline 
+- please see the mazeABCD_spikesorting repo 
 
 
 
