@@ -67,7 +67,7 @@ STEP2: maze registration and transition rate analysis
 AFTER EXPERIMENT 
 -----------------------------------
 
-**STEP1: Organise your ceph folder accordingly, with the following folder structure:**
+# STEP1: Organise your ceph folder accordingly, with the following folder structure:**
 
 
 ## Folder Structure 
@@ -135,24 +135,24 @@ AFTER EXPERIMENT
     │   └── poketime_raw/
 ```
 
-**STEP2. double check metadata and upload to the `/raw_data/metadata/` folder** 
+# STEP2. double check metadata and upload to the `/raw_data/metadata/` folder** 
 - make sure to mark the sessions to include as 1 in the include column.
 - sessions to exclude: e.g. animal dropping out of maze; abnormal behaviour; etc.
 - mark the sessions to manually correct, which would include
       - sessions that are restarted (pycontrol and ephys restarted) without restarting the camera recording (i.e. one tracking id with two behaivour ids), which requires manual splitting of the .h5 file and .csv file for ROIs after sleap processing 
       - sessions where pycontrol task was started before ephys/camera (which require manual alignment of sync pulses
 
-**STEP3: running sleap**  
+# STEP3: running sleap**  
     - please see the repo by Peter for a detailed instruction of SLEAP
 
-**STEP4: maze registration and transition rate analysis**
+# STEP4: maze registration and transition rate analysis**
     - please see the repo mazeABCD_registration 
 
-**STEP5: run the behavioural preprocessing pipeline** 
+# STEP5: run the behavioural preprocessing pipeline** 
     - please see the mazeABCD_preprocessing repo
 
 (OPTIONAL, only if doing ephys recording)
-**STEP6: run the ephys preprocessing pipeline** 
+# STEP6: run the ephys preprocessing pipeline** 
     - please see the mazeABCD_spikesorting repo 
 
 
